@@ -6,6 +6,10 @@
 body{
     width: 1440px;
     margin: auto;
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-position: right;
+    background-size: 82%;
+    background-repeat: no-repeat;
 }
 
 :root{
@@ -26,32 +30,51 @@ h1{
 
 .heading{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     margin: 20px;
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-size: 32%;
+    background-repeat: no-repeat;
 }
 
 .contenedor-titulo{
-    width: 25%;
+    width: 50%;
     padding: 25px;
-    margin-right: 250px;
+    margin-left: 55px;
+}
+
+h1{
+    width: 55%;
+}
+.parrafo-titulo{
+    line-height: 25px;
+    width: 75%;
 }
 
 .rating{
-    width: 25%;
-    padding: 25px;
-    margin-top: 40px;
+    width: 50%;
+    margin-top: 70px;
 }
 
 .rating-info{
-    width: 100%;
+    width: 55%;
+    height: 40px;
     background-color: var(--neutral-light);
     color: var(--primary-dark);
     font-weight: 500;
     display: inline-block;
     justify-content: center;
-    margin-bottom: 10px;
-    padding: 8px 40px;
+    margin-bottom: 15px;
+    padding: 20px 40px 0;
     border-radius: 7px;
+}
+
+.rating-info:nth-child(2){
+    margin-left: 40px;
+}
+
+.rating-info:nth-child(3){
+    margin-left: 80px;
 }
 
 .testimonials{
@@ -75,10 +98,10 @@ h1{
 }
 
 .testimonial-card:nth-child(1){
-    margin-bottom: 80px;
+    margin-bottom: 75px;
 }
 .testimonial-card:nth-child(2){
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
 .testimonial-card:nth-child(3){
